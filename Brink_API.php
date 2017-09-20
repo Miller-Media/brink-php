@@ -13,7 +13,7 @@ class Brink_API {
 	private function send($args) {
 		
 		$custom_request = 'GET';
-		$data = $http_header = array();
+		$data = array();
 		extract($args);
 		
 		$ch = curl_init();
@@ -23,7 +23,7 @@ class Brink_API {
 		curl_setopt($ch, CURLOPT_HEADER, FALSE);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $custom_request);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-		if ($http_header) curl_setopt($ch, CURLOPT_HTTPHEADER, $http_header);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $http_header);
 
 		$response = curl_exec($ch);
 		curl_close($ch);
@@ -123,7 +123,6 @@ class Brink_API {
 		$args = array(
 			'url' => $this->api_baseurl."flights",
 			'custom_request' => 'PUT',
-			'data' => array(),
 			'http_header' => array(
 				"Content-Type: application/json",
 				"Authorization: JWT ".$this->access_token
