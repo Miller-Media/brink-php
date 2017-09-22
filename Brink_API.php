@@ -31,6 +31,13 @@ class Brink_API {
 		return $response;
 	}
 	
+	public function is_active_token($token) {
+		$token_parts = explode('.', $token);
+		$token_data = json_decode(base64_decode($token_parts[1]));
+		if ($token_data->exp > time()) return true;
+		else return false;
+	}
+	
 	public function create_user($data) {
 		
 		// $data (array) attributes:
