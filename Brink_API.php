@@ -1,5 +1,7 @@
 <?php
 
+namespace MillerMedia\Brink;
+
 class Brink_API {
 	
 	public $access_token;
