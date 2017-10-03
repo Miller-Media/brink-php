@@ -1,12 +1,23 @@
 PHP Brink API Wrapper
 ========================
 
+Install the PHP Package
+-------------------------
+
+::
+
+    $ composer require millermedia/brink-php
+
+	
+Using the API
+--------------	
+
 1. Login to the api to receive a jwt token that can be used in future requests without the need to reauthenticate */
 
 .. code-block:: php
 
-	include("Brink_API.php");
-	$brink_api = new Brink_API();
+	include("vendor/autoload.php");
+	$brink_api = new \MillerMedia\Brink\Brink_API();
 
 	// Login to the api via username and password
 	$user_data = array(
