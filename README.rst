@@ -1,4 +1,5 @@
-// Using the API
+PHP Brink API Wrapper
+========================
 
 /* 1. Login to the api to receive a jwt token that can be used in future requests without the need to reauthenticate */
 
