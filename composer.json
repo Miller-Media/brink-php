@@ -1,7 +1,7 @@
 {
 	"name": "millermedia/brink-php",
-	"description": "A PHP wrapper to the Brink API"
-	"namespace": "MillerMedia\Brink"
+	"description": "A PHP wrapper to the Brink API",
+	"namespace": "MillerMedia\Brink",
 	"autoload": {
 		"psr-4": {
 			"MillerMedia\\Brink\\": "/"
