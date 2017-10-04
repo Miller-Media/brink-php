@@ -12,7 +12,7 @@ Install the PHP Package
 Using the API
 --------------	
 
-1. Login to the api to receive a jwt token that can be used in future requests without the need to reauthenticate */
+1. Login to the api to receive a jwt token that can be used in future requests without the need to reauthenticate
 
 .. code-block:: php
 
@@ -37,7 +37,7 @@ Using the API
 	// so additional requests can be handled correctly
 	$flights = $brink_api->get_all_flights();
 
-2. If you already have a jwt token prepared, you can use it when creating the api instance and bypass logging in. */
+2. If you already have a jwt token prepared, you can use it when creating the api instance and bypass logging in.
 
 .. code-block:: php
 
