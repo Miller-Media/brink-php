@@ -1,6 +1,4 @@
-<img src="http://joinbrink.com/assets/images/repo/Brink.png" style="display:block;margin:0 auto;max-width:100px;">
-<br />
-<img src="http://joinbrink.com/assets/images/repo/PHP-logo.png" style="display:block;margin:0 auto;max-width:100px;">
+<img src="http://joinbrink.com/assets/images/repo/Brink.png"><img src="http://joinbrink.com/assets/images/repo/PHP-logo.png">
 
 Install the PHP Package
 -------------------------
